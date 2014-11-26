@@ -7,7 +7,7 @@ select id, foo, bar from testdata
 
 <html>
   <head>
-    <title>DB Tests</title>
+    <title>DB Tests Terry</title>
   </head>
   <body>
 
