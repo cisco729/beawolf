@@ -41,5 +41,8 @@
 			</li>
 		</ul>
 	</div>
+	<div id="mainContent" class="main">
+		This content changes based upon the selections.
+	</div>
 </body>
 </html>
