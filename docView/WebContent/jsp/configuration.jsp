@@ -36,7 +36,7 @@
 			<li id="sidebarItem5">
 				Database Configuration
 			</li>
-			<li id=sidebarItem6">
+			<li id="sidebarItem6">
 				Add Ons
 			</li>
 		</ul>
