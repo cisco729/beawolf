@@ -1,37 +1,21 @@
-<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
-http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
-    version="2.4">
-  <description>MySQL Test App</description>
-  <resource-ref>
-      <description>DB Connection</description>
-      <res-ref-name>jdbc/doc</res-ref-name>
-      <res-type>javax.sql.DataSource</res-type>
-      <res-auth>Container</res-auth>
-  </resource-ref>
+<web-app>
+  
+  
+
+  
+  <servlet>
+	<servlet-name>action</servlet-name>
+	<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+	<init-param>
+		<param-name>config</param-name>
+		<param-value>/WEB-INF/struts-config.xml</param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+</servlet>
+  
+<servlet-mapping>
+	<servlet-name>action</servlet-name>
+	<url-pattern>*.do</url-pattern>
+</servlet-mapping>
+ 
 </web-app>
-
-<!--<web-app id="WebApp_9" version="2.4"
-	xmlns="http://java.sun.com/xml/ns/j2ee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-
-	<display-name>Struts2 Application</display-name>
-	<filter>
-		<filter-name>struts2</filter-name>
-		<filter-class>
-
-			org.apache.struts2.dispatcher.FilterDispatcher
-		</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>struts2</filter-name>
-		<url-pattern>/*</url-pattern>
-
-	</filter-mapping>
-	<welcome-file-list>
-		<welcome-file>Login.jsp</welcome-file>
-	</welcome-file-list>
-
-</web-app>-->
