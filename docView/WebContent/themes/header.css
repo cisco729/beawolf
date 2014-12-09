@@ -1,0 +1,13 @@
+.headerTitle{
+	display: inline-block;
+	padding-left: 40%;
+}
+
+.folderLogo{
+	display: inline-block;
+	float: right;
+}
+
+.compImage{
+	display:inline;
+}

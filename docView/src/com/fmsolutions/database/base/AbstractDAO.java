@@ -41,6 +41,19 @@ public class AbstractDAO {
 		
 	}
 	
+	public int dbInsert(String insertStatement){
+		this.getConnection();
+		int row=0;
+		try{
+			stmt = conn.createStatement();
+			row = stmt.executeUpdate(insertStatement);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		return row;
+	}
+	
 	public void cleanUp(){
 		if(conn!=null){
 			try{
