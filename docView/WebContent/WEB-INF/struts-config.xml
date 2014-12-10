@@ -19,6 +19,15 @@
 		<forward name="configPage" path="/jsp/configuration.jsp"></forward>
 	   </action>
 	   
+	   <action path="/regServices"
+	   type="com.fmsolutions.folder.action.RegistrationAction"
+		scope="session"
+		parameter="method"
+		validate="false">
+		
+		<forward name="register" path="/jsp/registration.jsp"></forward>
+		</action>
+	   
 	</action-mappings>
  
 </struts-config>

@@ -47,6 +47,7 @@ public class AbstractDAO {
 		try{
 			stmt = conn.createStatement();
 			row = stmt.executeUpdate(insertStatement);
+
 		}catch(Exception e){
 			e.printStackTrace();
 		}

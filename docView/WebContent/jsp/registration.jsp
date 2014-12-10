@@ -5,13 +5,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" href="../themes/base.css">
+<link rel="stylesheet" href="themes/base.css">
 <title>Registration</title>
-<script type="text/javascript" src="../javascript/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="javascript/jquery-2.1.1.js"></script>
 
 <script>
 function reset(){
-	$("input").val("");
+	$("input").val(""); 
 }
 
 </script>

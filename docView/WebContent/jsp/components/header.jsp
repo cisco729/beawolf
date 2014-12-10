@@ -1,7 +1,7 @@
 <%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>  
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>  
 <%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic" %>  
-<link rel="stylesheet" href="../themes/header.css">
+<link rel="stylesheet" href="themes/header.css">
 
 <div class="header">
 	<div class="compImage">
