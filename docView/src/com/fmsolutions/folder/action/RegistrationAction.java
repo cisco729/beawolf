@@ -48,6 +48,7 @@ public class RegistrationAction extends DispatchAction{
 		userReg.setPhoneNumber(request.getParameter("phoneNumber"));
 		userReg.setUserName(request.getParameter("userAlias"));
 		userReg.setEmail(request.getParameter("email"));
+		System.out.println(userReg.getMiddleInitial());
 		
 		//encode password
 		userReg.setPassword(encrypt(request.getParameter("password")));
@@ -81,15 +82,13 @@ public class RegistrationAction extends DispatchAction{
 		
 	}
 	
-	public void getNextUserId(ActionMapping mapping, ActionForm form,
+	public String getNextUserId(ActionMapping mapping, ActionForm form,
 			   HttpServletRequest request, HttpServletResponse response) throws Exception{
 		
 		RegistrationDao dbRegistration = new RegistrationDao();
 		String userId = dbRegistration.getNextUserId();
 		
-		response.setStatus(200);
-		response.getWriter().print(userId);
-		response.flushBuffer();
+		return userId;
 		
 	}
 	
@@ -124,8 +123,14 @@ public class RegistrationAction extends DispatchAction{
 	public void checkExistingUserId(ActionMapping mapping, ActionForm form,
 			   HttpServletRequest request, HttpServletResponse response) throws Exception{
 		
-		String userId = request.getParameter("userId");
+		String userAlias = request.getParameter("userAlias");
+		RegistrationDao dbReg = new RegistrationDao();
 		
+		boolean userAliasExists = dbReg.checkExistingUserAlias(userAlias);
+		
+		response.setStatus(200);
+		response.getWriter().print("{\"exists\":\""+userAliasExists+"\"}");
+		response.flushBuffer();
 	}
 	
 }

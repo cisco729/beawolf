@@ -98,8 +98,29 @@ public class RegistrationDao extends AbstractDAO {
 		return userId;
 	}
 	
-	public boolean checkExistingUserId(String userId){
+	public boolean checkExistingUserAlias(String userAlias){
 		boolean exists = false;
+		
+		StringBuffer queryString = new StringBuffer();
+		
+		queryString.append("SELECT count(user_alias) ");
+		queryString.append("from user ");
+		queryString.append("where user_alias = '"+userAlias+"'");
+		
+		System.out.println("Query: "+queryString.toString());
+		
+		try{
+			result = dbSelect(queryString.toString());
+			result.next();
+			int userAliasOccurance = result.getInt("count(user_alias)");
+			if(userAliasOccurance > 0){
+				exists = true;
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			cleanUp();
+		}
 		
 		return exists;
 	}
