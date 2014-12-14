@@ -24,8 +24,7 @@
 		scope="session"
 		parameter="method"
 		input="StatusForm"
-		validate="false">
-		
+		validate="false">		
 		<forward name="statusPage" path="/jsp/status.jsp"></forward>
 	   </action>
 	   
