@@ -25,7 +25,7 @@ public class LoginAction extends DispatchAction{
 	
 	public ActionForward login(ActionMapping mapping, ActionForm form,
 								   HttpServletRequest request, HttpServletResponse response) throws Exception{
-		
+		//start login
 		System.out.println("Entering Login");
 		
 		LoginForm login = new LoginForm();
