@@ -7,6 +7,7 @@
  
 	<form-beans>
 	   <form-bean name="loginForm" type="com.fmsolutions.folder.login.LoginForm"></form-bean>
+	   <form-bean name="statusForm" type="com.fmsolutions.folder.status.StatusForm"></form-bean>
 	</form-beans>
  
 	<action-mappings>
@@ -23,7 +24,7 @@
 		type="com.fmsolutions.folder.action.StatusAction"
 		scope="session"
 		parameter="method"
-		input="StatusForm"
+		input="statusForm"
 		validate="false">		
 		<forward name="statusPage" path="/jsp/status.jsp"></forward>
 	   </action>

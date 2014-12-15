@@ -10,9 +10,7 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.DispatchAction;
 
-import com.fmsolutions.database.dao.LoginDao;
 import com.fmsolutions.database.dao.StatusDao;
-import com.fmsolutions.folder.login.LoginForm;
 import com.fmsolutions.folder.status.StatusForm;
 
 public class StatusAction extends DispatchAction{

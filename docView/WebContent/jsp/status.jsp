@@ -23,7 +23,7 @@ function status(){
 	<jsp:include page="components/header.jsp"></jsp:include>
 
 	<form name="statusForm" action="statusPage;">
-	<div class="StatusInfo">
+	<div class="StatusForm">
 			Status Info:
 			<ul>
 				<li>
