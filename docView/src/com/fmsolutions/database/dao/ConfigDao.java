@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.fmsolutions.database.base.AbstractDAO;
 
-public class config extends AbstractDAO{
+public class ConfigDao extends AbstractDAO{
 	
 	public ArrayList<String> getStores(){
 		StringBuffer queryString = new StringBuffer();

@@ -1,0 +1,21 @@
+<Context>
+
+<Resource name="jdbc/fmsolutions"
+
+	auth="Container"
+
+	type="javax.sql.DataSource"
+
+	username="root"
+
+	password="Dillon07"
+
+	driverClassName="com.mysql.jdbc.Driver"
+
+	url="jdbc:MySQL://localhost:3307/fmsolutions"
+
+	maxActive="15"
+
+	maxIdle="3"/>
+
+</Context>
