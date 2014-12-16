@@ -1,7 +1,7 @@
 package com.fmsolutions.folder.action;
 
 public class StatusInfo {
-	// declare variable
+	// declare variables
 	private String statusCode;
 	private String statusName;
 	private String maintId;
