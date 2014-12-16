@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 manifest-version: 1.0
+=======
+manifest-version: 1.0
+>>>>>>> branch 'master' of https://github.com/cisco729/beawolf.git
 class-path:

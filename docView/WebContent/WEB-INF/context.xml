@@ -1,5 +1,6 @@
 <Context>
 
+<<<<<<< HEAD
 <Resource name="jdbc/fmsolutions"
 
 	auth="Container"
@@ -13,6 +14,21 @@
 	driverClassName="com.mysql.jdbc.Driver"
 
 	url="jdbc:MySQL://localhost:3307/fmsolutions"
+=======
+<Resource name="jdbc/doc"
+
+	auth="Container"
+
+	type="javax.sql.DataSource"
+
+	username="appdoc"
+
+	password="p@ssword1"
+
+	driverClassName="com.mysql.jdbc.Driver"
+
+	url="jdbc:mysql://localhost:3306/docView"
+>>>>>>> branch 'master' of https://github.com/cisco729/beawolf.git
 
 	maxActive="15"
 
