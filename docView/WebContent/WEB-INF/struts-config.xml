@@ -8,6 +8,7 @@
 	<form-beans>
 	   <form-bean name="loginForm" type="com.fmsolutions.folder.login.LoginForm"></form-bean>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	   <form-bean name="statusForm" type="com.fmsolutions.folder.status.StatusForm"></form-bean>
 	</form-beans>
  
@@ -72,3 +73,38 @@
 	</action-mappings>
  
 </struts-config>
+=======
+	</form-beans>
+ 
+	<action-mappings>
+	
+	   <action path="/config"
+		type="com.fmsolutions.folder.action.configAction"
+		scope="session"
+		parameter="method"
+		validate="false">
+		<forward name="configPage" path="/jsp/configuration.jsp"></forward>
+	   </action>
+	   
+	   <action path="/regServices"
+	   type="com.fmsolutions.folder.action.RegistrationAction"
+		scope="session"
+		parameter="method"
+		validate="false">
+		
+		<forward name="register" path="/jsp/registration.jsp"></forward>
+		</action>
+	   
+	   <action path="/login"
+	   type="com.fmsolutions.folder.action.LoginAction"
+		scope="session"
+		parameter="method"
+		validate="false"
+		input="loginForm">
+		<forward name="login" path="/jsp/login.jsp"></forward>
+		<forward name="success" path="/jsp/registration.jsp"></forward>
+		</action>
+	</action-mappings>
+ 
+</struts-config>
+>>>>>>> branch 'master' of https://github.com/cisco729/beawolf.git
