@@ -40,7 +40,7 @@ public class StatusAction extends DispatchAction{
 	
 	public ArrayList<StatusInfo> getStatusData(HttpServletResponse response) throws Exception{
 		System.out.println("---Entered Status Action Class ---");
-		
+		// create StatusDao
 		StatusDao status = new StatusDao();
 		
 		ArrayList<StatusInfo> listOfStatuses = status.getStatusInfo();
