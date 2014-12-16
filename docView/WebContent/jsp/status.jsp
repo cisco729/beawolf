@@ -26,7 +26,7 @@ function status(){
 	<div class="StatusForm">
 			Status Info:
 			<ul>
-				<li>
+				<li> 
 					<span>Status Code:</span> <input type="text" name="statusCode"/>
 				</li>
 				<li>
@@ -34,5 +34,6 @@ function status(){
 				</li>
 			</ul>
 	</div>
+	</form>
 </body>
 </html>

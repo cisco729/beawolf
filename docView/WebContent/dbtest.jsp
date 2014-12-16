@@ -1,13 +1,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<sql:query var="rs" dataSource="jdbc/fmsolutions">
+<sql:query var="rs" dataSource="jdbc/doc">
 select id, foo, bar from testdata
 </sql:query>
 
 <html>
   <head>
-    <title>DB Tests Terry</title>
+    <title>DB Test</title>
   </head>
   <body>
 

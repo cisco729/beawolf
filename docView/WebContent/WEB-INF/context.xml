@@ -1,42 +1,5 @@
 <Context>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<Resource name="jdbc/fmsolutions"
-
-	auth="Container"
-
-	type="javax.sql.DataSource"
-
-	username="root"
-
-	password="Dillon07"
-
-	driverClassName="com.mysql.jdbc.Driver"
-
-	url="jdbc:MySQL://localhost:3307/fmsolutions"
-=======
-<Resource name="jdbc/doc"
-
-	auth="Container"
-
-	type="javax.sql.DataSource"
-
-	username="appdoc"
-
-	password="p@ssword1"
-
-	driverClassName="com.mysql.jdbc.Driver"
-
-	url="jdbc:mysql://localhost:3306/docView"
->>>>>>> branch 'master' of https://github.com/cisco729/beawolf.git
-
-	maxActive="15"
-
-	maxIdle="3"/>
-
-</Context>
-=======
 <Resource name="jdbc/doc"
 
 	auth="Container"
@@ -56,4 +19,3 @@
 	maxIdle="3"/>
 
 </Context>
->>>>>>> branch 'master' of https://github.com/cisco729/beawolf.git

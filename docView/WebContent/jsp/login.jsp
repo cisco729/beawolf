@@ -22,7 +22,7 @@ function login(){
 	<%session.setAttribute("headerTitle","Login"); %>
 	<jsp:include page="components/header.jsp"></jsp:include>
 	
-	<html:form name="loginForm" type="com.fmsolutions.folder.login.LoginForm" action="login" method="POST">
+	<html:form>
 	<html:hidden property="method" value="login"/>
 	<div class="loginInfo">
 			Please Login:
