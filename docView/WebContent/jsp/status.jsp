@@ -21,16 +21,16 @@ function status(){
 <body style="background-color: white;">
 	<%session.setAttribute("headerTitle","Status"); %>
 	<jsp:include page="components/header.jsp"></jsp:include>
-
+	
 	<form name="statusForm" action="statusPage;">
 	<div class="StatusForm">
 			Status Info:
 			<ul>
 				<li> 
-					<span>Status Code:</span> <input type="text" name="statusCode"/>
+					<span>Status Code:</span> <html:text name="statusForm" property="statusCode"></html:text>
 				</li>
-				<li>
-					<span>Status Name:</span>  <input type="text" name="statusName"/>
+				<li> 
+					<span>Status Name:</span>  <html:text name="statusForm" property="statusName"></html:text>
 				</li>
 			</ul>
 	</div>

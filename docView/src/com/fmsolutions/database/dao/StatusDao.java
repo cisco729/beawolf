@@ -14,7 +14,9 @@ public class StatusDao extends AbstractDAO{
 		
 		queryString.append("SELECT STATUS_CODE, STATUS_NAME, MAINT_ID, MAINT_DATE ");
 		queryString.append("FROM STATUS");
-								
+		
+		System.out.println("Query:  "+queryString.toString());
+		
 		result = dbSelect(queryString.toString());
 		try{
 			while(result.next()){

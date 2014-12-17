@@ -24,16 +24,13 @@ public class StatusAction extends DispatchAction{
 		HttpSession session = request.getSession();
 		
 		StatusForm status = new StatusForm();
-		status = (StatusForm) form;
 		String forward = "statusPage";
-	
-		status = (StatusForm) form;
 		
-		//ArrayList<StatusInfo> listOfStatuses = this.getStatusData(response);
+		ArrayList<StatusInfo> listOfStatuses = this.getStatusData();
 		
 		// set values
-		//status.setStatusCode(listOfStatuses.get(0).getStatusCode());
-		//status.setStatusName(listOfStatuses.get(0).getStatusName());
+		status.setStatusCode(listOfStatuses.get(0).getStatusCode());
+		status.setStatusName(listOfStatuses.get(0).getStatusName());
 		//status.setMaintId(listOfStatuses.get(0).getMaintId());
 		//status.setMaintDate(listOfStatuses.get(0).getMaintDate());
 		
@@ -43,7 +40,7 @@ public class StatusAction extends DispatchAction{
 	
 	}
 	
-	public ArrayList<StatusInfo> getStatusData(HttpServletResponse response) throws Exception{
+	public ArrayList<StatusInfo> getStatusData() throws Exception{
 		System.out.println("---Entered Status Action Class ---");
 		// create StatusDao
 		StatusDao status = new StatusDao();

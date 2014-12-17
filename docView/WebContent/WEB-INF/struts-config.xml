@@ -43,9 +43,10 @@
 		scope="session"
 		parameter="method"
 		validate="false"
-		input="loginForm">
+		name="loginForm">
 		<forward name="login" path="/jsp/login.jsp"></forward>
-		<forward name="success" path="/jsp/registration.jsp"></forward>
+		<forward name="success" path="/jsp/login/success.jsp"></forward>
+		<forward name="failed" path="/jsp/login/failed.jsp"></forward>
 		</action>
 	</action-mappings>
  
