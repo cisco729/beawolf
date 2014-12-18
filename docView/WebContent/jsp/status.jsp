@@ -26,12 +26,14 @@ function status(){
 	<div class="StatusForm">
 			Status Info:
 			<ul>
+			<logic:iterate id="stat" name="statusForm">
 				<li> 
-					<span>Status Code:</span> <html:text name="statusForm" property="statusCode"></html:text>
+					<span>Status Code:</span> <html:text name="stat" property="statusCode"></html:text>
 				</li>
 				<li> 
-					<span>Status Name:</span>  <html:text name="statusForm" property="statusName"></html:text>
+					<span>Status Name:</span>  <html:text name="stat" property="statusName"></html:text>
 				</li>
+				</logic:iterate>
 			</ul>
 	</div>
 	</form>

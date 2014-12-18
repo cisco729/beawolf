@@ -46,9 +46,6 @@ public class RegistrationDao extends AbstractDAO {
 				insertString.append(userId+",");
 				insertString.append("'"+userReg.getUserName()+"',");
 				insertString.append("'A',");
-				insertString.append("1,");
-				insertString.append("2,");
-				insertString.append("0,");
 				insertString.append("'appdoc')");
 				
 				row = dbInsert(insertString.toString());
