@@ -29,34 +29,35 @@ public class StatusAction extends DispatchAction{
 		
 		session.setAttribute("statusForm",  status);
 		
-		
-		ArrayList<StatusInfo> listOfStatuses = this.getStatusData(response);
+		ArrayList<StatusInfo> listOfStatuses = this.getStatusData();
 		
 		// set values
 		status.setStatusCode(listOfStatuses.get(0).getStatusCode());
 		status.setStatusName(listOfStatuses.get(0).getStatusName());
-		status.setMaintId(listOfStatuses.get(0).getMaintId());
-		status.setMaintDate(listOfStatuses.get(0).getMaintDate());
+		//status.setMaintId(listOfStatuses.get(0).getMaintId());
+		//status.setMaintDate(listOfStatuses.get(0).getMaintDate());
+		
+		session.setAttribute("statusForm", status);
 		
 		
 		return mapping.findForward(forward);
 	
 	}
 	
-	public ArrayList<StatusInfo> getStatusData(HttpServletResponse response) throws Exception{
+	public ArrayList<StatusInfo> getStatusData() throws Exception{
 		System.out.println("---Entered Status Action Class ---");
 		// create StatusDao
 		StatusDao status = new StatusDao();
 		
 		ArrayList<StatusInfo> listOfStatuses = status.getStatusInfo();
 		
-		response.setStatus(200);
-		response.getWriter().print("HERE IS THE FIRST RECORD");
-		response.getWriter().print(listOfStatuses.get(0).getStatusCode());
-		response.getWriter().print(listOfStatuses.get(0).getStatusName());
-		response.getWriter().print(listOfStatuses.get(0).getMaintId());
-		response.getWriter().print(listOfStatuses.get(0).getMaintDate());
-		response.flushBuffer();
+		//response.setStatus(200);
+		//response.getWriter().print("HERE IS THE FIRST RECORD");
+		//response.getWriter().print(listOfStatuses.get(0).getStatusCode());
+		//response.getWriter().print(listOfStatuses.get(0).getStatusName());
+		//response.getWriter().print(listOfStatuses.get(0).getMaintId());
+		//response.getWriter().print(listOfStatuses.get(0).getMaintDate());
+		//response.flushBuffer();
 		
 		return listOfStatuses;
 	}
