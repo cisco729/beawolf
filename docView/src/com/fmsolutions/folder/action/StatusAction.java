@@ -38,7 +38,7 @@ public class StatusAction extends DispatchAction{
 		
 		return mapping.findForward(forward);
 	
-	}
+	} 
 	
 	public ArrayList<StatusInfo> getStatusData() throws Exception{
 		System.out.println("---Entered Status Action Class ---");
