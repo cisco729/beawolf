@@ -2,6 +2,7 @@ package com.fmsolutions.folder.action;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
@@ -20,6 +21,12 @@ public class LoginAction extends DispatchAction{
 	public ActionForward loginPage(ActionMapping mapping, ActionForm form,
 			   HttpServletRequest request, HttpServletResponse response) throws Exception{
 		
+		HttpSession session = request.getSession();
+		LoginForm loginForm = new LoginForm();
+		
+		session.setAttribute("loginForm",loginForm);
+		
+		
 		return mapping.findForward("login");
 	}
 	
@@ -28,11 +35,13 @@ public class LoginAction extends DispatchAction{
 		//start login
 		System.out.println("Entering Login");
 		
-		LoginForm login = new LoginForm();
+		HttpSession session = request.getSession();
+		
+		LoginForm login;
 		LoginDao dbLogin = new LoginDao();
 		String forward = "";
 		
-		login = (LoginForm) form;
+		login = (LoginForm) session.getAttribute("loginForm");
 		
 		//Get user id and encrypted password
 		String[] params = new String[1];

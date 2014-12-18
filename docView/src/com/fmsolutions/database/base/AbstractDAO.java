@@ -9,11 +9,11 @@ import java.sql.Statement;
 public class AbstractDAO {
 
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://localhost/doc";
+	static final String DB_URL = "jdbc:MySQL://localhost:3307/fmsolutions";
 	
 	//Credentials
-	static final String DB_USER = "appdoc";
-	static final String DB_PASS = "p@ssword1";
+	static final String DB_USER = "root";
+	static final String DB_PASS = "Dillon07";
 	Connection conn = null;
 	Statement stmt = null;
 	public ResultSet result;

@@ -1,10 +1,4 @@
 <web-app>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  
-  
-
-  
   <servlet>
 	<servlet-name>action</servlet-name>
 	<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
@@ -20,42 +14,4 @@
 	<url-pattern>*.do</url-pattern>
 </servlet-mapping>
  
-=======
-
-  <servlet>
-	<servlet-name>action</servlet-name>
-	<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
-	<init-param>
-		<param-name>config</param-name>
-		<param-value>/WEB-INF/struts-config.xml</param-value>
-	</init-param>
-	<load-on-startup>1</load-on-startup>
-</servlet>
-  
-<servlet-mapping>
-	<servlet-name>action</servlet-name>
-	<url-pattern>*.do</url-pattern>
-</servlet-mapping>
-
-
->>>>>>> branch 'master' of https://github.com/cisco729/beawolf.git
-=======
-
-  <servlet>
-	<servlet-name>action</servlet-name>
-	<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
-	<init-param>
-		<param-name>config</param-name>
-		<param-value>/WEB-INF/struts-config.xml</param-value>
-	</init-param>
-	<load-on-startup>1</load-on-startup>
-</servlet>
-  
-<servlet-mapping>
-	<servlet-name>action</servlet-name>
-	<url-pattern>*.do</url-pattern>
-</servlet-mapping>
-
-
->>>>>>> branch 'master' of https://github.com/cisco729/beawolf.git
 </web-app>
