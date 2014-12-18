@@ -8,6 +8,7 @@
 	<form-beans>
 	   <form-bean name="loginForm" type="com.fmsolutions.folder.login.LoginForm"></form-bean>
 	   <form-bean name="statusForm" type="com.fmsolutions.folder.status.StatusForm"></form-bean>
+	   <form-bean name="mcForm" type="com.fmsolutions.managementcenter.forms.MCForm"></form-bean>
 	</form-beans>
  
 	<action-mappings>
@@ -48,6 +49,25 @@
 		<forward name="success" path="/jsp/login/success.jsp"></forward>
 		<forward name="failed" path="/jsp/login/failed.jsp"></forward>
 		</action>
+		
+		<action path="/managementCenter"
+	   type="com.fmsolutions.managementcenter.action.ManagementCenterAction"
+		scope="session"
+		parameter="method"
+		validate="false"
+		name="mcForm">
+		<forward name="mc" path="/jsp/ManagementCenter/mc_home.jsp"></forward>
+		</action>
+		
+		<action path="/managementServices"
+		type="com.fmsolutions.managementcenter.services.ManagementServices"
+		scope="request"
+		parameter="method"
+		validate="false">
+		
+		</action>
+		
+		
 	</action-mappings>
  
 </struts-config>

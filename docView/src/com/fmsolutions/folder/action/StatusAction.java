@@ -29,12 +29,12 @@ public class StatusAction extends DispatchAction{
 		ArrayList<StatusInfo> listOfStatuses = this.getStatusData();
 		
 		// set values
-		status.setStatusCode(listOfStatuses.get(0).getStatusCode());
-		status.setStatusName(listOfStatuses.get(0).getStatusName());
+		//status.setStatusCode(listOfStatuses.get(0).getStatusCode());
+		//status.setStatusName(listOfStatuses.get(0).getStatusName());
 		//status.setMaintId(listOfStatuses.get(0).getMaintId());
 		//status.setMaintDate(listOfStatuses.get(0).getMaintDate());
 		
-		session.setAttribute("statusForm", status);
+		session.setAttribute("statusForm", listOfStatuses);
 		
 		return mapping.findForward(forward);
 	
