@@ -13,4 +13,11 @@ public class LoginForm extends ActionForm{
 	public String getPassword() {
 		return password;
 	}
+	public void setUserAlias(String userAlias) {
+		this.userAlias = userAlias;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
 }
