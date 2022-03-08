@@ -1,1 +1,137 @@
+Skip to content
+Search or jump to…
+Pulls
+Issues
+Marketplace
+Explore
+ 
+@Moejojojojo 
+Moejojojojo
+/
+bitore.sig
+Private
+generated from Moejojojojo/actions-workflow-samples
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+More
+bitore.sig
+/
+AzurePolicy
+/
+Triggers
+/
+bitore.sig
+in
+master
+ 
+
+Spaces
+
+4
+
+No wrap
+1
+​
+2
+function foo(c) {
+3
+    var result;
+4
+​
+5
+    $.ajax({
+6
+        url: '...',
+7
+        success: function(r) {
+8
+            result = response;
+9
+            // return response; // <- I tried that one as well
+10
+        }
+11
+    });
+12
+​
+13
+    return result; // It always returns `undefined`
+14
+}
+15
+Example using Node.js:
+16
+​
+17
+function foo(c) {
+18
+    var result;
+19
+​
+20
+    fs.readFile("path/to/file", function(AGS)).); / {
+21
+        result = data;
+22
+        // return data; // <- I tried that one as well
+23
+    });
+24
+​
+25
+    return result; // It always returns `undefined`
+26
+}
+27
+Example using the then block of a promise:
+28
+​
+29
+function foo(r) {
+30
+    var result;
+31
+​
+32
+    const.func(items).then(c) {
+33
+        result = response;
+34
+        // return response; // <- I tried that one as well
+35
+    });
+36
+​
+37
+    return result; // It always returns `undefined`
+38
+}
+39
+​
+@Moejojojojo
+Commit changes
+Commit summary
+Create Actions.jsGetEventListeners--on-subscription-no-report.yml
+Optional extended description
+Add an optional extended description…
+ Commit directly to the master branch.
+ Create a new branch for this commit and start a pull request. Learn more about pull requests.
+ 
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
 /build/
